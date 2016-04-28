@@ -33,6 +33,29 @@ body {
   width: auto;
 }
 
+/* Special class for my movie carousel function. */
+.navbar-wrapper-c {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper-c > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper-c .navbar {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper-c .navbar .container {
+  width: auto;
+}
+
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -42,6 +65,7 @@ body {
   height: 600px;
   margin-bottom: 60px;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -52,6 +76,7 @@ body {
   height: 600px;
   background-color: #777;
 }
+
 .carousel-inner > .item > img {
   position: absolute;
   top: 0;
@@ -64,6 +89,17 @@ body {
   -moz-transition: 0.6s ease-in-out left;
   -o-transition: 0.6s ease-in-out left;
   transition: 0.6s ease-in-out left;
+}
+
+/* Vertical spacing
+------------------------- */
+
+.vspace-navbar {
+  margin-top: 55px;
+}
+
+.vspace-navbar-carousel {
+  margin-top: 50px;
 }
 
 
