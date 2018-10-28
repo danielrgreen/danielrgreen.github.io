@@ -9,10 +9,21 @@
     <meta name="Daniel Green" content="Teeth, isotopes, climate and evolution">
     <link rel="icon" href="danicon.jpg">
 
-    <title>Daniel Russell Green</title>
+    <title>Daniel R. Green, PhD</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -28,104 +39,47 @@
     <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
   </head>
-<!-- NAVBAR
-================================================== -->
+
   <body>
-    <div class="navbar-wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html">Daniel Russell Green</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="cv.html">C.V.</a></li>
-                <li><a href="people.html">People</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="mineralization.html">Mineralization</a></li>
-                    <li><a href="experimental.html">Experiments</a></li>
-                    <li><a href="fieldwork.html">Fieldwork</a></li>
-                    <li><a href="modeling.html">Modeling</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">Non-academic</li>
-                    <li><a href="tutoring.html">Tutoring</a></li>
-                    <li><a href="links.html">Useful links</a></li>
-                    <li><a href="flowers.html">Turkana flowers</a></li>
-                    <li><a href="photography.html">Photography</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="cv.html">C.V.</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="people.html">People</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
 
-
-    <!-- Carousel
+    <!-- Page header
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="photos/human_m3_fire.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Understanding mineralization.</h1>
-              <p>My research focuses on the structure & timing of tooth mineralization using synchrotron x-ray, stable isotope, histological and modeling methods.</p>
-              <p><a class="btn btn-lg btn-primary" href="mineralization.html" role="button">Mineralization</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="photos/sheep_sketch_smer.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Exploring the recent and fossil records.</h1>
-              <p>Live animal experiments and fossil collections can teach us about how teeth record & preserve seasonal climate patterns.</p>
-              <p><a class="btn btn-lg btn-primary" href="experimental.html" role="button">Experiments</a></p>
-              <p><a class="btn btn-lg btn-primary" href="fieldwork.html" role="button">Fossils</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="photos/clouds_turkana.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Reconstructing seasonal hydrology.</h1>
-              <p>Stable isotope measurements & computer modeling can help us understand how seasonal rainfall & resource availability influenced the emergence of unique human behaviors.</p>
-              <p><a class="btn btn-lg btn-primary" href="modeling.html" role="button">Modeling</a></p>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('photos/human_m3_fire.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Daniel R. Green, PhD</h1>
+              <span class="subheading">Biological Anthropologist</span>
             </div>
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
+    </header>
 
 
     <!-- Marketing messaging and featurettes
@@ -134,85 +88,52 @@
 
     <div class="container marketing">
 
+      <div class="row">
+        <div class="col-lg-12">
+          <p>I am a postdoctoral research fellow in the Bidlack Laboratory at the Forsyth Institute in Cambridge, a Harvard-affiliated medical and dental nonprofit, and am a research associate in the department of Human Evolutionary Biology at Harvard University, where I received my PhD. I investigate mechanisms of tooth growth, and tools by which teeth can be turned into diagnostic indicators of environment, climate, and childhood exposure to pollutants in contemporary and ancient populations.</p>
+          <p>My doctoral work in human evolutionary biology demonstrated how seasonal hydrological patterns can be inferred from fossil teeth associated with human ancestral remains in east Africa, 2–5 million years ago. This work combined diverse methods including synchrotron imaging, live animal experimentation, field work in northern Kenya, stable light isotope geochemistry, physiological modeling, and computation-based optimization routines.</p>
+          <p>At the Forsyth I’ve developed these methods to investigate the genetic and proteomic patterns of tooth formation with Forsyth scientists. I am furthermore investigating how the environmental and climatic reconstruction techniques that I developed in my doctoral work can be employed to recover information about exposures to heavy metals and plastic pollutants in children.</p>
+        </div><!-- /.col-lg-12 -->
+      </div><!-- /.row -->
+
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img class="img-circle" src="photos/sem_tooth.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Laboratory methods</h2>
-          <p>Scanning electron microscopy and synchrotron x-ray imaging are powerful tools for studying developing tooth enamel.</p>
-          <p><a class="btn btn-default" href="mineralization.html" role="button">More about characterization techniques &raquo;</a></p>
+          <img class="img-circle" src="photos/sem_tooth.png" alt="Generic placeholder image" width="140" height="140">
+          <p>In my work I use a variety of methods to study enamel formation, including work with animal models, computed tomography, stable light isotope geochemistry, proteomics, genetics, machine learning, and Markov Chain Monte Carlo simulations.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="photos/kokiselei_laga.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>Fossil collection</h2>
-          <p>The ephemeral Kokiselei laga in Turkana, Kenya, is the site of important fossil remains that contain clues about the environment and climate of sites of hominin occupation.</p>
-          <p><a class="btn btn-default" href="fieldwork.html" role="button">More about fossil collections &raquo;</a></p>
+          <img class="img-circle" src="photos/kokiselei_laga.jpg" alt="Generic placeholder image" width="140" height="140">
+          <p>My research involves collaboration with field teams and museums, sampling paleontological materials from field sites in order to reconstruct past environmental and behavioral patterns.</p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
+          <h2>Computational modeling</h2>
           <img class="img-circle" src="photos/modeling_example.jpg" alt="Generic placeholder image" width="140" height="140">
-          <h2>Modeling seasonal hydrology, animal behavior and physiology</h2>
-          <p>Computational optimization routines can be combined with detailed study of tooth isotope chemistry, mineralization, and physiology to reconstruct patterns of past seasonal hydrology.</p>
-          <p><a class="btn btn-default" href="modeling.html" role="button">More about computation and optimization &raquo;</a></p>
+          <p>Interpreting the large datasets produced by modern methods in biology requires computational tools and modeling. In my work I use physiological models, optimization routines, and machine learning tools to learn more about processes of growth, behavior, and environment from teeth.</p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
-
-      <!-- START THE FEATURETTES -->
-
       <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Compound-specific imaging <span class="text-muted">reveals patterns of organic and mineral deposition during tooth growth.</span></h2>
-          <p class="lead">We have corroborated synchrotron imaging findings with scanning electron microscopy. This technique allows us document the magnitude of oxygen, calcium, phosphorus and carbon deposition in secretory and maturation matrices during molar mineralization.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="photos/sem_tooth_color.png" alt="Generic placeholder image">
-          <p>A scanning electron microscopy image showing elemental mapping of maturing enamel matrix. Photographed in collaboration with James Weaver.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Miocene deposits <span class="text-muted">at the site of Lothagam in Turkana, Kenya.</span></h2>
-          <p class="lead">An important part of my research has included fieldwork in the Turkana Basin, and serving as a teaching assistant for the Turkana Basin Institute (TBI)'s Field School. Here, Lothagam sandstone deposits viewed by students during Craig Feibel's geology class taught at TBI Turkwel in Turkana, Kenya.</p>
-        </div>
-        <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" src="photos/lothagam_temple.jpg" alt="Generic placeholder image">
-          <p>Miocene sediments at Lothagam photographed during Craig Feibel's geology module for the TBI for the TBI field school.</p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Student mentorship <span class="text-muted">at Eliot House, Harvard College.</span></h2>
-          <p class="lead">I have served as a resident tutor at Eliot House for 4 years, providing support for students seeking fellowship and other funding sources, and advising students in Human Evolutionary Biology.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="photos/snow_jan.jpg" alt="Generic placeholder image">
-          <p>The Museum of Comparative Zoology (MCZ) building, where students attend Human Evolutionary Biology, Archaeology, and Earth and Planetary Science classes.</p?
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-      <hr class="divider">
 
       <!-- Two columns of text below featurettes -->
       <div class="row featurette">
         <div class="col-lg-4">
-          <img class="img-circle" src="photos/people_2.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Teaching and mentoring</h2>
+          <img class="img-circle" src="photos/snow_jan.jpg" alt="Generic placeholder image" width="140" height="140">
+          <p>At Harvard I've taught seminars introducing human evolution, taught and designed a class on human evolution and climate change, and worked as a fellowships tutor with students at the college for four years. I've worked as a teaching assistant in human anatomy, and have served as a teaching assistant for geology, ecology, paleontology, human evolution, and archaeology classes at the Turkana Basin Institute in Kenya.</p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
           <h2>Community</h2>
-          <p>People who support my work.</p>
+          <img class="img-circle" src="photos/people_2.jpg" alt="Generic placeholder image" width="140" height="140">
+          <p>Science is highly collaborative, and today scientists rely not only on giants of the past, but stand on the shoulders of their peers. I am proud to work alongside scientists from many institutions and disciplines globally.</p>
           <p><a class="btn btn-primary" href="people.html" role="button">More about people &raquo;</a></p>
         </div><!-- /.col-lg-5 -->
         <div class="col-lg-4">
-          <img class="img-circle" src="photos/daniel_larry_sq.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>My C.V.</h2>
-          <p>For a more detailed record of my research, publications and presentations.</p>
+          <img class="img-circle" src="photos/daniel_larry_sq.jpg" alt="Generic placeholder image" width="140" height="140">
+          <p>For a more detailed record of my research, publications, funding and presentations.</p>
           <p><a class="btn btn-primary" href="cv.html" role="button">See my C.V. &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
@@ -224,7 +145,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; Daniel Green, 2015</p>
+        <p>&copy; Daniel Green, 2018 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
